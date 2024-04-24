@@ -1,0 +1,37 @@
+.wrapper {
+	background: #102D00;
+	// padding-top: 60px;
+	padding-bottom: 110px;
+	color: #fff;
+}
+.container {
+	max-width: 1630px;
+	padding: 0 10px;
+	margin: 0 auto;
+
+}
+.title {
+	font-weight: 600;
+	font-size: 58px;
+	line-height: 70px;
+	text-align: center;
+	color: #fff;
+	margin-bottom: 48px;
+	width: 100%;
+}
+.sliderImage {
+	width: 510px;
+	max-height: 347px;
+	margin-bottom: 27px;
+	@media (max-width: 1120px) {
+			width: 100%;
+	}
+}
+.imageWrapper {
+	cursor: pointer;
+	& > div {
+		font-size: 32px;
+		line-height: 40px;
+		font-weight: 600;
+	}
+}

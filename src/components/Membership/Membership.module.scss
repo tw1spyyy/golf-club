@@ -1,0 +1,80 @@
+.wrapper {
+	background: #102D00;
+	padding-top: 60px;
+	padding-bottom: 110px;
+	color: #fff;
+}
+.container {
+	max-width: 1760px;
+	padding: 0 10px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.leftPart {
+	display: flex;
+	flex-direction: column;
+	gap: 140px;
+	max-width: 717px;
+}
+.rightPart {
+	display: flex;
+	flex-direction: column;
+	gap: 28px;
+}
+.topImagesWrap {
+	display: flex;
+	gap: 28px;
+	& > img {
+		transition: 0.3s;
+		&:hover {
+			scale: 1.02;
+			transition: 0.3s;
+		}
+	}
+}
+.topImagesFirst {
+	width: 480px;
+	height: 570px;
+	border-top-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	
+}
+.topImagesSecond {
+	width: 336px;
+	height: 570px;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+}
+.bottomImagesWrap {
+	& > img {
+		width: 845px;
+		height: 306px;
+		border-top-left-radius: 50px;
+		border-bottom-right-radius: 50px;
+		transition: 0.3s;
+		&:hover {
+			scale: 1.02;
+			transition: 0.3s;
+		}
+	}
+}
+.contentBlock {
+
+}
+.mainTitle {
+	font-size: 50px;
+	line-height: 58px;
+	font-weight: 600;
+	margin: 0;
+	margin-bottom: 50px;
+}
+.mainText {
+	font-size: 22px;
+	line-height: 26px;
+	font-weight: 400;
+	text-align: justify;
+}
+.formBlock {
+	
+}
