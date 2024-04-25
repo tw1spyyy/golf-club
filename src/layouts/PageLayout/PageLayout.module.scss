@@ -1,0 +1,30 @@
+.wrapper {
+	background: #102D00;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	color: #fff;
+}
+.footerWrapper {
+	margin-top: auto;
+}
+.childrenWrapper {
+	max-width: 1760px;
+	width: 100%;
+	padding: 0 10px;
+	margin: 45px auto 0;
+}
+.headerWrapper {
+	max-width: 1600px;
+	width: 100%;
+	margin: 0 auto;
+}
+.title {
+	font-size: 32px;
+	line-height: 36px;
+	font-weight: 600;
+	padding: 10px 22px;
+	border: 3px solid #fff;
+	display: inline-block;
+	border-radius: 30px;
+}
