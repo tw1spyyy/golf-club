@@ -91,12 +91,12 @@ export const LessonsBlock = () => {
               onChange={handleDateChange}
 							disabledDate={isDateBooked}
 							value={selectedDate}
-              style={{ width: 500, marginBottom: 10 }}
+              style={{ width: '100%', marginBottom: 10 }}
             />
             <Select
               placeholder="Choose Instructor"
               onChange={value => setSelectedOption(value)}
-              style={{ width: 500, marginBottom: 10 }}
+              style={{ width: '100%', marginBottom: 10 }}
 							value={selectedOption}
             >
               <Option value="John Smith">John Smith</Option>
@@ -106,7 +106,7 @@ export const LessonsBlock = () => {
             <Select
               placeholder="Choose lesson type"
               onChange={value => setLessonType(value)}
-              style={{ width: 500, marginBottom: 10 }}
+              style={{ width: '100%', marginBottom: 10 }}
 							value={lessonType}
             >
               <Option value="Individual">Individual</Option>
@@ -116,7 +116,7 @@ export const LessonsBlock = () => {
 							value={levelType}
               placeholder="Choose lesson level"
               onChange={value => setLevelType(value)}
-              style={{ width: 500, marginBottom: 10 }}
+              style={{ width: '100%', marginBottom: 10 }}
             >
               <Option value="for beginners">For beginners</Option>
               <Option value="intermediate">Intermediate</Option>
@@ -126,9 +126,9 @@ export const LessonsBlock = () => {
               placeholder="Enter your phone number"
               value={phone}
               onChange={e => setPhone(e.target.value)}
-              style={{ width: 500, marginBottom: 10 }}
+              style={{ width: '100%', marginBottom: 10 }}
             />
-            <Button  style={{ width: 500, marginBottom: 10 }} type="primary" onClick={handleSubmit}>Book Lesson</Button>
+            <Button  style={{ width: '100%', marginBottom: 10 }} type="primary" onClick={handleSubmit}>Book Lesson</Button>
           </div>
         </div>
 			</div>

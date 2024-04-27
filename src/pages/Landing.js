@@ -11,9 +11,9 @@ export const Landing = () => {
     <div>
       <Top />
       <Membership />
-      {/* <SliderBlock />
+      <SliderBlock />
       <News />
-      <Footer /> */}
+      <Footer />
     </div>
   )
 }

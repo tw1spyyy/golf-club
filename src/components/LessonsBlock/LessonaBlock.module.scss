@@ -8,15 +8,25 @@
 	margin-bottom: 60px;
 	gap: 80px;
 	justify-content: space-between;
+	@media (max-width: 1000px) {
+			flex-direction: column;
+	}
 }
 .containerInstructors {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 20px;
+	@media (max-width: 1000px) {
+		display: flex;
+		flex-direction: column;
+	}
 }
 .instrItem {
 	display: flex;
 	gap: 16px;
+	@media (max-width: 1000px) {
+		align-items: flex-end;
+	}
 }
 .instrItemCont {
 	display: flex;
@@ -34,6 +44,9 @@
 		line-height: 24px;
 		margin: 0;
 	}
+	@media (max-width: 1000px) {
+		margin-bottom: 30px;
+	}
 }
 .listItem {
 
@@ -50,6 +63,9 @@
 .aboutBlock {
 	display: flex;
 	gap: 100px;
+	@media (max-width: 1000px) {
+		justify-content: center;
+	}
 }
 .aboutBlockSub {
 	& > h4 {
@@ -88,9 +104,16 @@
 		font-size: 36px;
 		line-height: 40px;
 	}
+	@media (max-width: 1000px) {
+	margin-right: 20px;			
+	}
 }
 .formWrapper {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
+	max-width: 500px;
+	@media (max-width: 1000px) {
+			min-width: 100%;
+	}
 }

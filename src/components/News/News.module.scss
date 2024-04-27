@@ -18,6 +18,9 @@
 	justify-content: space-between;
 	align-items: flex-end;
 	height: 100%;
+	@media (max-width: 1000px) {
+		align-items: auto;
+	}
 }
 .title {
 	text-align: right;
@@ -30,6 +33,9 @@
 .contactBlock {
 	max-width: 770px;
 	margin-bottom: 40px;
+	@media (max-width: 1000px) {
+		margin: 0 auto 40px;
+	}
 }
 .contactText {
 	font-size: 26px;

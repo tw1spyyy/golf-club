@@ -15,7 +15,7 @@
 		transform: translateY(-10px);
 		transition: 0.4s;
 	}
-	@media (min-width: 500px) {
+	@media (max-width: 1000px) {
 		margin: 20px auto 0;
 		font-size: 70px;
 }
@@ -39,7 +39,7 @@
 			}
 		}
 	}
-	@media (min-width: 500px) {
+	@media (max-width: 1000px) {
 			display: none;
 			background-size: cover;
 	}
