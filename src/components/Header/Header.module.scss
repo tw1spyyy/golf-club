@@ -15,6 +15,10 @@
 		transform: translateY(-10px);
 		transition: 0.4s;
 	}
+	@media (min-width: 500px) {
+		margin: 20px auto 0;
+		font-size: 70px;
+}
 }
 .headerMenu {
 	& > ul {
@@ -34,5 +38,9 @@
 				transition: 0.4s;
 			}
 		}
+	}
+	@media (min-width: 500px) {
+			display: none;
+			background-size: cover;
 	}
 }

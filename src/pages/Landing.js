@@ -3,6 +3,7 @@ import { Top } from "../components/Top/Top"
 import { Membership } from "../components/Membership/Membership"
 import { SliderBlock } from "../components/Slider/Slider"
 import { News } from "../components/News/News"
+import { Footer } from "../components/Footer/Footer"
 
 
 export const Landing = () => {
@@ -10,9 +11,9 @@ export const Landing = () => {
     <div>
       <Top />
       <Membership />
-      <SliderBlock />
+      {/* <SliderBlock />
       <News />
-			<Landing />
+      <Footer /> */}
     </div>
   )
 }

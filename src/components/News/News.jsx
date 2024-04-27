@@ -28,7 +28,7 @@ export const News = () => {
   };
 
   return (
-    <div className={css.wrapper} onClick={closeModal}>
+    <div id="newsSection" className={css.wrapper} onClick={closeModal}>
       <div className={css.container}>
         <div className={css.title}>News</div>
         <div className={css.contactBlock}>

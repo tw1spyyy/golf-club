@@ -1,0 +1,96 @@
+.wrapper {
+	max-width: 1600px;
+	margin: 0 auto;
+}
+.containerTop {
+	display: flex;
+	margin-top: 70px;
+	margin-bottom: 60px;
+	gap: 80px;
+	justify-content: space-between;
+}
+.containerInstructors {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
+.instrItem {
+	display: flex;
+	gap: 16px;
+}
+.instrItemCont {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: flex-end;
+	& > div {
+		font-size: 20px;
+		line-height: 24px;
+		margin-bottom: 4px;
+		font-weight: 500;
+	}
+	& > ul {
+		font-size: 20px;
+		line-height: 24px;
+		margin: 0;
+	}
+}
+.listItem {
+
+}
+.subtitle {
+	font-size: 32px;
+	line-height: 40px;
+	font-weight: 400;
+	margin-bottom: 40px;
+}
+.mt32 {
+	margin-top: 32px;
+}
+.aboutBlock {
+	display: flex;
+	gap: 100px;
+}
+.aboutBlockSub {
+	& > h4 {
+		margin: 0;
+		margin-bottom: 24px;
+		font-size: 36px;
+		line-height: 40px;
+		font-weight: 600;
+	}
+}
+.aboutBlockList {
+	display: flex;
+	flex-direction: column;
+	gap: 38px;
+}
+.aboutBlockListItem {
+	& > h6  {
+		font-weight: 500;
+		margin: 0;
+		font-size: 24px;
+		line-height: 28px;
+		margin-bottom: 14px;
+	}
+	& > div {
+		font-size: 20px;
+		line-height: 24px;
+	}
+}
+.rentBlock {
+	// width: 100%;
+	margin-right: 100px;
+	& > h1 {
+		font-weight: 600;
+		margin: 0;
+		margin-bottom: 20px;
+		font-size: 36px;
+		line-height: 40px;
+	}
+}
+.formWrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}

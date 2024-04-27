@@ -22,7 +22,7 @@ export const Footer = () => {
 	]
 
 	return (
-		<div className={css.wrapper}>
+		<div id="contactsSection" className={css.wrapper}>
 			<div className={css.title}>Contact us</div>
 			<div className={css.container}>
 				{footerArr.map((el, i) => {

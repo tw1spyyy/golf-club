@@ -6,6 +6,7 @@ import image2 from '../../images/slider/2.png'
 import image3 from '../../images/slider/3.png'
 import image4 from '../../images/slider/4.png'
 import image5 from '../../images/slider/5.png'
+import { useNavigate } from "react-router-dom";
 
 
 export const SliderBlock = () => {
@@ -18,7 +19,7 @@ export const SliderBlock = () => {
     slidesToScroll: 1,
 		arrows: false,
 		autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
 		responsive: [
       {
         breakpoint: 1630,
@@ -37,8 +38,10 @@ export const SliderBlock = () => {
     ]
   };
 
+	const navigate = useNavigate()
+
 	return (
-		<div className={css.wrapper}>
+		<div id="servicesSection" className={css.wrapper}>
 			<div className={css.container}>
 					<div className={css.title}>
 						Services
@@ -46,25 +49,25 @@ export const SliderBlock = () => {
 					<div className={css.sliderWrapper}>
 					<div className="slider-container">
 						<Slider {...settings}>
-							<div className={css.imageWrapper}>
+							<div onClick={() => navigate('/lessons')} className={css.imageWrapper}>
 								<img className={css.sliderImage} src={image1} alt="slider-1" />
 								<div>Golf Lessons</div>
 							</div>
-							<div className={css.imageWrapper}>
+							<div onClick={() => navigate('/rental')} className={css.imageWrapper}>
 								<img className={css.sliderImage} src={image2} alt="slider-2" />
 								<div>Equipment Rental</div>
 							</div>
-							<div className={css.imageWrapper}>
+							<div onClick={() => navigate('/dining')} className={css.imageWrapper}>
 								<img className={css.sliderImage} src={image3} alt="slider-3" />
 								<div>
 									Dining and Hospitality
 								</div>
 							</div>
-							<div className={css.imageWrapper}>
+							<div onClick={() => navigate('/events')} className={css.imageWrapper}>
 								<img className={css.sliderImage} src={image4} alt="slider-4" />	
 								<div>Event Hosting</div>
 							</div>
-							<div className={css.imageWrapper}>
+							<div onClick={() => navigate('/shop')} className={css.imageWrapper}>
 								<img className={css.sliderImage} src={image5} alt="slider-5" />	
 								<div>Shop</div>
 							</div>

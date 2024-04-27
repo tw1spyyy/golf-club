@@ -3,6 +3,7 @@
 	padding-top: 60px;
 	padding-bottom: 110px;
 	color: #fff;
+	overflow: hidden;
 }
 .container {
 	max-width: 1760px;
@@ -10,17 +11,27 @@
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
+	@media (min-width: 500px) {
+		flex-direction: column-reverse;
+		gap: 40px;
+	}
 }
 .leftPart {
 	display: flex;
 	flex-direction: column;
-	gap: 140px;
-	max-width: 717px;
+	gap: 40px;
+	max-width: 800px;
+	@media (min-width: 500px) {
+		margin: 0 auto;
+	}
 }
 .rightPart {
 	display: flex;
 	flex-direction: column;
 	gap: 28px;
+	@media (min-width: 500px) {
+		transform: translateX(50px);
+	}
 }
 .topImagesWrap {
 	display: flex;
@@ -33,15 +44,25 @@
 		}
 	}
 }
+.imageWrrrap {
+	& > img {
+		cursor: pointer;
+		transition: 0.3s;
+		&:hover {
+			scale: 1.02;
+			transition: 0.3s;
+		}
+	}
+}
 .topImagesFirst {
-	width: 480px;
+	width: 410px;
 	height: 570px;
 	border-top-left-radius: 50px;
 	border-bottom-right-radius: 50px;
 	
 }
 .topImagesSecond {
-	width: 336px;
+	width: 406px;
 	height: 570px;
 	border-top-right-radius: 50px;
 	border-bottom-left-radius: 50px;
@@ -77,4 +98,68 @@
 }
 .formBlock {
 	
+}
+.topImageDiv {
+	position: absolute;
+	bottom: 20px;
+	left: 10px;
+	font-size: 20px;
+	font-weight: 400;
+	& > h3 {
+		font-size: 28px;
+		line-height: 32px;
+		margin: 0;
+		margin-top: 12px;
+	}
+}
+
+.brown-form {
+  background-color: #c6a96a;
+	border-radius: 34px;
+  padding: 15px 45px 20px;
+  width: 80%;
+
+  .form-group {
+    margin-bottom: 10px;
+
+    label {
+      display: block;
+      color: #102c00;
+			font-size: 20px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      height: 54px;
+			border-radius: 12px;
+      padding: 10px;
+      background-color: white;
+      border: none;
+      margin-top: 5px;
+			font-size: 24px;
+			color: #102c00;
+    }
+  }
+
+  .half-width {
+    display: flex;
+		gap: 40px;
+
+    .form-group {
+      flex: 1;
+      margin-right: 5px;
+    }
+  }
+
+  button {
+    width: 80%;
+    margin: 15px auto 0;
+    display: block;
+    padding: 10px;
+		font-size: 30px;
+		border-radius: 12px;
+		background: #102c00;
+		color: #fff;
+		cursor: pointer;
+  }
 }
